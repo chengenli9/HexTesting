@@ -190,7 +190,7 @@ public class HexView extends SurfaceView implements View.OnTouchListener{
         visited[row][col] = true;
 
         // Offsets for neighboring cells in a hexagonal grid
-        int[] dx = {-1, -1, 0, 0, 1, 1};
+        int[] dx = {-1, 1, 0, 0, 1, -1};
         int[] dy = {0, -1, -1, 1, 0, 1};
 
         //loops through each case of offsets
